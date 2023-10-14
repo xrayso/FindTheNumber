@@ -9,6 +9,7 @@ const MAX = SQRT_MAX * SQRT_MAX;
 
 const probabilityDistribution = [];
 
+console.log("making array");
 for (let i = 0; i <= MAX; i++){
     probabilityDistribution.push(0);
 }
@@ -17,6 +18,7 @@ for (let i = 0; i <= SQRT_MAX; i++){
         probabilityDistribution[i*j]++;
     }
 }
+console.log("made array");
 // Parse JSON and url-encoded body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
